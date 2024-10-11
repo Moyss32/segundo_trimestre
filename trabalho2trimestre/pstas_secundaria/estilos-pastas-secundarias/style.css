@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+* {
+    color: white;
+    box-sizing: border-box;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+body {
+    height: 4100px;
+    margin: 0;
+    background: linear-gradient(to bottom, #000, rgb(90, 0, 0));
+    overflow-x: hidden;
+}
+
+#cabeçalho-principal {
+    padding: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    background-image: url(../../imgs/cenario.jpg);
+    background-size: cover;
+    background-position: unset;
+    background-attachment: fixed;
+}
+
+#links > a {
+    text-decoration: none;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: red;
+    background-color: #434343c4;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    transition: 1s ease-in-out;
+}
+
+#links > a:hover {
+    background-color: #434343;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+/* Começo do carrossel */
+.container {
+    padding-top: 100px;
+    position: relative;
+}
+
+.slides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #434343;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numero-slide {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.container-cabeçalho {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.linha:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coluna {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.5;
+    border: 2px solid transparent;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+    border: 2px solid red;
+}
+/* fim do carrossel */
+/* Começo das especificações e outros */
+section#texto{
+    padding-top: 30px;
+    color: white;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+p#introducao{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+}
+p#gerais{
+    text-align: center;
+}
+/* Fim das especificações e outros */
+/* começo das especificações */
+h1#requisitos {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 25px;
+    padding-bottom: 15px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #434343;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #960000;
+    color: #ff4c4c;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #272727;
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+tbody tr:hover {
+    background-color: #666;
+}
+/* fim das especificações */
+/* comprar */
+.botao_comprar{
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: x-large;
+}
+.comprar{
+    text-align: center;
+    color: #960000;
+    font-size: larger;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.centro{
+    text-align: center;
+}
+/* fim comprar */

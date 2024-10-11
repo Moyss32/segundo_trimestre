@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicom/x.ico" type="image/x-icon">
+    <script src="interatividade/script.js"></script>
+    <title>PlayXPerience</title>
+</head>
+<body>
+    <main>
+        <header id="cabeçalho">
+            <h1>Play<span style="color: red; font-weight: bolder;">X</span>Perience</h1>
+            <div id="links"> 
+                <a href="#">Recomendações</a>
+                <a href="#">Dicas</a>
+                <a href="#">Notícias</a>
+                <a href="#">Novidades</a>
+                <a href="#">Futuro</a>
+                <a href="#">Quiz</a>
+            </div>
+        </header>
+        <section id="carrossel-10-jogos">
+            <div class="boas_vindas">
+                <p><strong>Seja bem-vindo ao Play<span style="color: red; font-weight: bolder;">X</span>Perience!</strong></p>
+                <p id="txt_boas_vindas">
+                    Explore uma vasta seleção de jogos, acompanhe as últimas novidades do mundo gamer<br> 
+                    e personalize sua experiência com recomendações exclusivas. Divirta-se e aproveite ao máximo cada momento!
+                </p>
+            </div>
+
+            <div>
+                <p id="recomendacoes">
+                    <strong>
+                        <spam style="color: red;">Re</spam>comendações:
+                    </strong>
+                </p>
+            </div>
+
+            <div class="container-slideshow">
+                <div class="slide fade">
+                    <div class="texto-numero">1 / 10</div>
+                    <a href=""><img src="imgs/bmw/bmw.png" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 1.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(0)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">2 / 10</div>
+                    <a href=""><img src="imgs/cod/cod-black-ops-6.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 2.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(1)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">3 / 10</div>
+                    <a href=""><img src="imgs/diablo/diablo4.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 3.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(2)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">4 / 10</div>
+                    <a href=""><img src="imgs/elden-ring/elden-ring.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 4.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(3)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">5 / 10</div>
+                    <a href=""><img src="imgs/farcry/farcry.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 5.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(4)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">6 / 10</div>
+                    <a href=""><img src="imgs/fortnite/fortinite.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 6.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(5)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">7 / 10</div>
+                    <a href=""><img src="imgs/gta/gta.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 7.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(6)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">8 / 10</div>
+                    <a href="pstas_secundaria/red dead redemption/red-dead-redemption-2.html"><img src="imgs/rdr2/red-dead-2.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">
+                        <strong>Read Dead Redemption 2</strong><br>
+                        <p>Considerado um dos melhore jogos do planeta, tem um grafico incrivel,
+                            uma história ótima e uma jogabilidade muito boa.<br> 
+                            Red Dead Redemption 2 se destaca pelo realismo visual e estilo cinematográfico, 
+                            com paisagens detalhadas e narrativa envolvente. A trilha sonora de estilo western e o gameplay imersivo, 
+                            que inclui atividades como caça e exploração, reforçam o realismo. 
+                            O jogo também oferece personalização de roupas e equipamentos, 
+                            refletindo a época do Velho Oeste.<br></p>
+                    </div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(7)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">9 / 10</div>
+                    <a href=""><img src="imgs/shadows of war/shadows-of-war.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 9.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(8)">Saiba Mais</button>
+                </div>
+
+                <div class="slide fade">
+                    <div class="texto-numero">10 / 10</div>
+                    <a href=""><img src="imgs/skyrim/skyrim.jpg" style="width:100%"></a>
+                    <div class="texto">Clique na imagem para ver mais sobre o jogo!!</div>
+                    <div class="conteudo-adicional">Este é o conteúdo adicional do slide 10.</div>
+                    <button class="botao-saiba-mais" onclick="alternarConteudo(9)">Saiba Mais</button>
+                </div>
+
+                <a class="anterior" onclick="mudarSlides(-1)">❮</a>
+                <a class="proximo" onclick="mudarSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="ponto" onclick="slideAtual(1)"></span> 
+                <span class="ponto" onclick="slideAtual(2)"></span> 
+                <span class="ponto" onclick="slideAtual(3)"></span> 
+                <span class="ponto" onclick="slideAtual(4)"></span> 
+                <span class="ponto" onclick="slideAtual(5)"></span> 
+                <span class="ponto" onclick="slideAtual(6)"></span> 
+                <span class="ponto" onclick="slideAtual(7)"></span> 
+                <span class="ponto" onclick="slideAtual(8)"></span> 
+                <span class="ponto" onclick="slideAtual(9)"></span> 
+                <span class="ponto" onclick="slideAtual(10)"></span> 
+            </div>
+
+            
+        </section>
+        <h1 id="jogos-recomendados-h1">Jogos Recomendados diarios e mensais</h1>
+        <section id="jogos-recomendados">
+
+            
+
+            <div class="tempo">
+                <div class="titulo">
+                    Jogo Do Dia
+                </div>
+                <div class="jogo">
+                    <img src="imgs/jogo do dia!mes/black_myth_wukomg.png" alt="imagem do jogo diario: Black Myth Wukong">
+                </div>
+            </div>
+            <div class="tempo">
+                <div class="titulo">
+                    Jogo Do Mês
+                </div>
+                <div class="jogo">
+                    <img src="imgs/jogo do dia!mes/no_mans_sky.jpg" alt="Imagem do jogo mensal: ">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <section id="carrossel-com-as-informações">
+        <div id="titulo-dicas" style="font-size: xx-large; padding-bottom: 100px;"><span style="color: red;">D</span>icas para uma melhor e<span style="color: red;">X</span>perencia!</div>
+        <div class="container-slideshow">
+            <div class="container-slideshow">
+                <div class="slide fade">
+                    <div class="texto-numero">1 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Ajuste as Configurações Gráficas</strong><br>
+                        Personalize o Desempenho: Jogos como <em>Cyberpunk 2077</em> ou <em>Starfield</em> podem exigir muito do hardware. Ajuste as configurações gráficas para equilibrar qualidade visual e desempenho. Se o jogo estiver lento, considere reduzir sombras, resolução ou efeitos como anti-aliasing.<br>
+                        <strong>Ray Tracing:</strong> Se o seu hardware suporta, ative o Ray Tracing para uma experiência visual impressionante em jogos como <em>Control</em> ou <em>Minecraft</em>.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">2 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Explore e Interaja</strong><br>
+                        <em>The Witcher 3</em> e <em>Red Dead Redemption 2</em> são ricos em narrativa e detalhes. Explore o mapa, converse com NPCs e não se apresse em seguir apenas a história principal.<br>
+                        <strong>Side Quests:</strong> Muitas vezes, as missões secundárias revelam mais sobre o mundo do jogo e podem oferecer recompensas valiosas. Não as ignore.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">3 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Aperfeiçoe suas Habilidades</strong><br>
+                        Em títulos como <em>Sekiro: Shadows Die Twice</em> ou <em>Elden Ring</em>, a prática é fundamental. Dedique tempo para aprender os padrões dos inimigos e dominar os controles.<br>
+                        <strong>Táticas e Estratégia:</strong> Em jogos como <em>Civilization VI</em> ou <em>XCOM 2</em>, planeje suas ações com antecedência e adapte suas estratégias ao longo do jogo.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">4 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Jogue com Amigos</strong><br>
+                        Jogos como <em>It Takes Two</em> ou <em>Monster Hunter: World</em> oferecem experiências cooperativas únicas. Coordene com seu parceiro para superar desafios juntos.<br>
+                        <strong>Comunicação:</strong> Em jogos competitivos como <em>Valorant</em> ou <em>Fortnite</em>, a comunicação com sua equipe pode fazer toda a diferença. Use microfone e chat para coordenar estratégias.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">5 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Fique Atento às Atualizações</strong><br>
+                        Jogos como <em>The Elder Scrolls Online</em> ou <em>Destiny 2</em> recebem atualizações regulares que introduzem novos conteúdos e balanceamentos. Fique atento para aproveitar essas novidades.<br>
+                        <strong>Mods e Conteúdos da Comunidade:</strong> Alguns jogos como <em>Skyrim</em> ou <em>The Sims 4</em> têm uma comunidade ativa de modders. Experimente mods para expandir ainda mais a jogabilidade.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">6 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Imersão Total</strong><br>
+                        <strong>Use Fones de Ouvido:</strong> Em jogos de terror como <em>Resident Evil Village</em> ou de ação como <em>Call of Duty: Modern Warfare</em>, usar fones de ouvido melhora a imersão, ajudando a identificar sons sutis e aumentar a tensão.<br>
+                        <strong>Ajuste o HUD:</strong> Personalize a interface do usuário para reduzir a desordem na tela, permitindo uma experiência mais imersiva.
+                    </div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="texto-numero">7 / 10</div>
+                    <div class="slide-texto">
+                        <strong>Dicas Específicas para Jogos Populares</strong><br>
+                        <strong>Zelda: Breath of the Wild:</strong> Experimente combinações de receitas, explore áreas remotas do mapa, e não tenha medo de experimentar diferentes abordagens em combate.<br>
+                        <strong>Fortnite:</strong> Construa defensivamente e rapidamente em combates acirrados. Aprenda a editar construções rapidamente para ter vantagem sobre os oponentes.<br>
+                        <strong>Hades:</strong> Concentre-se em aprender os padrões de ataque dos inimigos e chefes. Priorize upgrades que se complementem para maximizar o potencial de cada tentativa.
+                    </div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="texto-numero">8 / 10</div>
+                <div class="slide-texto">
+                <div class="conteudo">
+                    <h3>Aprenda os Controles</h3>
+                    <p>
+                        <strong>Domine os Controles:</strong> Familiarize-se com todos os comandos do jogo antes de mergulhar nas missões. Títulos como <em>Dark Souls</em> e <em>Super Smash Bros.</em> exigem um domínio profundo dos controles para serem jogados com eficiência.
+                    </p>
+                    <p>
+                        <strong>Customize os Controles:</strong> Se o jogo permitir, ajuste os controles de acordo com suas preferências. Jogos de tiro em primeira pessoa, como <em>Call of Duty</em>, oferecem a opção de modificar a sensibilidade e os botões, o que pode melhorar seu desempenho.
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="slide fade">
+                <div class="texto-numero">9 / 10</div>
+                <div class="slide-texto">
+                <div class="conteudo">
+                    <h3>Conheça a Comunidade</h3>
+                    <p>
+                        <strong>Participe de Fóruns e Grupos:</strong> Entre em comunidades de jogos, como Reddit ou Discord, para compartilhar dicas, estratégias e tirar dúvidas. Jogos como <em>League of Legends</em> têm comunidades ativas que podem ajudar a entender melhor o jogo.
+                    </p>
+                    <p>
+                        <strong>Assista a Streamers e Tutoriais:</strong> Aprender com jogadores experientes pode acelerar sua curva de aprendizado. Plataformas como Twitch e YouTube são ótimas para assistir a partidas ao vivo e tutoriais.
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="slide fade">
+                <div class="texto-numero">10 / 10</div>
+                <div class="slide-texto">
+                <div class="conteudo">
+                    <h3>Mantenha o Equilíbrio</h3>
+                    <p>
+                        <strong>Pausas Regulares:</strong> Evite jogar por longos períodos sem descanso. Jogue por uma hora e faça pausas curtas para evitar fadiga mental e física.
+                    </p>
+                    <p>
+                        <strong>Varie os Jogos:</strong> Alternar entre gêneros de jogos (como RPGs, shooters e jogos de estratégia) pode ajudar a manter sua experiência fresca e divertida, além de desenvolver diferentes habilidades.
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+
+                <a class="anterior2" onclick="mudarSlides(-1)">❮</a>
+                <a class="proximo2" onclick="mudarSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="ponto" onclick="slideAtual(1)"></span> 
+                <span class="ponto" onclick="slideAtual(2)"></span> 
+                <span class="ponto" onclick="slideAtual(3)"></span> 
+                <span class="ponto" onclick="slideAtual(4)"></span> 
+                <span class="ponto" onclick="slideAtual(5)"></span> 
+                <span class="ponto" onclick="slideAtual(6)"></span> 
+                <span class="ponto" onclick="slideAtual(7)"></span> 
+                <span class="ponto" onclick="slideAtual(8)"></span> 
+                <span class="ponto" onclick="slideAtual(9)"></span> 
+                <span class="ponto" onclick="slideAtual(10)"></span> 
+            </div>
+
+            
+        </section>
+        <section id="noticias">
+            <div class="container-noticias">
+                <h1 id="noticias">Novidades</h1>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">Dragon Age: The Veilguard</h2">
+                    <p class="noticias">Uma das grandes novidades no mundo dos games é o anúncio de Dragon Age: The Veilguard, o novo título da BioWare, que teve um trailer revelado recentemente junto com a data de lançamento. O jogo promete expandir o universo de Dragon Age com uma nova história e mecânicas inovadoras (<a class="noticias" href="#">Lenda Games</a>).</p>
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem Dragon Age">
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">Avowed Adiado</h2">
+                    <p class="noticias">Outra novidade é o adiamento de Avowed, um dos jogos mais esperados da Obsidian Entertainment. Originalmente previsto para 2024, o lançamento foi movido para fevereiro de 2025 para garantir um polimento extra no jogo (<a class="noticias" href="#">Lenda Games</a>).</p>
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">NVIDIA RTX 5090</h2">
+                    <p class="noticias">A indústria está acompanhando com interesse o lançamento das novas GPUs da série RTX 50 da NVIDIA, que prometem melhorar significativamente o desempenho em jogos, especialmente em títulos que utilizam tecnologias como ray tracing e inteligência artificial para melhorar gráficos e desempenho (<a class="noticias" href="#">The Game Times</a>).</p>
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem NVIDIA RTX 5090">
+                </div>
+            </div>
+        </section>
+        <section id="novidades">
+            <div class="container-noticias">
+                <h1 id="noticias">Noticias</h1>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">The Legend of Zelda: Echoes of Wisdom</h2>
+                    <p class="noticias">Entre os lançamentos mais aguardados, temos *The Legend of Zelda: Echoes of Wisdom* para o Nintendo Switch, que traz uma nova aventura épica no universo de Zelda.</p>
+                    <img src="path-to-zelda-image" alt="Imagem The Legend of Zelda: Echoes of Wisdom">
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">The Legend of Zelda: Echoes of Wisdom</h2>
+                    <p class="noticias">Entre os lançamentos mais aguardados, temos *The Legend of Zelda: Echoes of Wisdom* para o Nintendo Switch, que traz uma nova aventura épica no universo de Zelda.</p>
+                    <img src="path-to-zelda-image" alt="Imagem The Legend of Zelda: Echoes of Wisdom">
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">God of War Ragnarok para PC</h2>
+                    <p class="noticias">O tão esperado *God of War Ragnarok* finalmente chega ao PC, permitindo que mais jogadores possam explorar a saga de Kratos e Atreus no mundo nórdico. Confira abaixo os requisitos mínimos e recomendados:</p>
+                    <table class="tabela-requisitos">
+                        <thead>
+                            <tr>
+                                <th>Configuração</th>
+                                <th>Mínimo</th>
+                                <th>Recomendado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SO</td>
+                                <td>Windows 10 (64-bit)</td>
+                                <td>Windows 10 (64-bit)</td>
+                            </tr>
+                            <tr>
+                                <td>GPU</td>
+                                <td>AMD RX 570 ou GTX 1650</td>
+                                <td>AMD RX 5700 XT ou RTX 2070</td>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel i5-2500k ou AMD Ryzen 3 1200</td>
+                                <td>Intel i7-7700k ou AMD Ryzen 7 2700</td>
+                            </tr>
+                            <tr>
+                                <td>Memória</td>
+                                <td>8 GB</td>
+                                <td>16 GB</td>
+                            </tr>
+                            <tr>
+                                <td>Armazenamento</td>
+                                <td>70 GB (SSD recomendado)</td>
+                                <td>70 GB (SSD)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">EA Sports FC 25</h2>
+                    <p class="noticias">Para os fãs de esportes, o lançamento de *EA Sports FC 25* é um dos mais esperados, prometendo gráficos de última geração e jogabilidade ainda mais realista.</p>
+                </div>
+        
+                <div class="novidade-noticias">
+                    <h2 class="noticias">Frostpunk 2 e Final Fantasy XVI</h2>
+                    <p class="noticias">Jogadores de estratégia podem se preparar para o lançamento de *Frostpunk 2*, enquanto títulos notáveis como *Final Fantasy XVI* continuam a atrair grande atenção.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sei-la">
+            <div class="container">
+                <h1>Futuro dos Games</h1>
+                <div class="pilares">
+                    <div class="pilar" id="pilar1">Futuro dos games com IAs</div>
+                    <div class="pilar" id="pilar2">Jogos na nuvem</div>
+                    <div class="pilar" id="pilar3">Hardwares para jogos</div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

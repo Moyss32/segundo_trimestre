@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+* {
+    color: white;
+    box-sizing: border-box;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 16000px;
+    margin: 0;
+    background: linear-gradient(to bottom, #000, rgb(90, 0, 0));
+    overflow-x: hidden;
+}
+
+#cabeçalho {
+    padding: 40px;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-image: url(../imgs/cenario.jpg);
+    background-size: cover;
+    background-position: unset;
+    background-attachment: fixed;
+}
+
+#links > a {
+    text-decoration: none;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: red;
+    background-color: #434343c4;
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    transition: 1s ease-in-out;
+}
+
+
+#links > a:hover{
+    background-color: #434343;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.boas_vindas {
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 20px;
+    font-size: xx-large;
+}
+
+#txt_boas_vindas {
+    font-family: "Irish Grover", Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 20%;
+    text-align: justify;
+    font-size: large;
+    font-weight: 600;
+    padding: 0;
+}
+
+p#recomendacoes{
+    padding: 50px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Container do slideshow */
+.container-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-attachment: fixed;
+}
+
+/* Botões de próximo e anterior */
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto da legenda */
+.texto {
+    display: inline-flex;
+    color: #ff0000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: #00000049;
+    left: 37%;
+}
+
+/* Texto do número (1/10 etc) */
+.texto-numero {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Pontos */
+.ponto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #444444;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ativo, .ponto:hover {
+    background-color: #da0000;
+    transition: background-color 6.8s ease;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from { opacity: .2; }
+    to { opacity: 1; }
+}
+
+.conteudo-adicional {
+    display: none;
+    padding: 15px;
+    background-color: #414141;
+    color: #ffffff;
+    border-top: 1px solid #ff0000;
+}
+
+.botao-saiba-mais {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-color: #a50000;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #750000;
+}
+/* Jogos Recomendados */
+#jogos-recomendados-h1{
+    padding-top: 330px;
+    text-align: center;
+}
+
+#jogos-recomendados{
+    background-attachment: fixed;
+    display: flex;
+}
+
+.tempo{
+    text-align: center;
+    padding-top: 70px;
+    justify-content: space-evenly;
+    height: 10px;
+    width: 100%;;
+    font-size: x-large;
+}
+.titulo{
+    background-color: #6e0000;
+    opacity: 0.7;
+    color: #fff;
+}
+.jogo{
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    background-color: #5353531d;
+}
+
+.jogo img {
+    background-attachment: fixed;
+    width: 84%;
+    height: 900px;
+    border-radius: 10px;
+
+    
+}
+/* fim dos jogos recomendados */
+/* carrossel com as informaões */
+#carrossel-com-as-informações{
+    text-align: center;
+    margin-top: 1200px;
+}
+.slide-texto {
+font-size: 18px;
+color: #fff;
+text-align: center;
+padding: 20px;
+background-color: #333;
+}
+.anterior2, .proximo2 {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.proximo2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior2{
+    left: 0px;
+}
+
+.anterior2:hover, .proximo2:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*fim do carrossel com as informaões */
+/* Noticias */
+.container-noticias {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 500px;
+    background-color: #434343;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1#noticias {
+    color: #ff0000;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.novidade-noticias {
+    margin-bottom: 40px;
+}
+
+.novidade-noticias img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.novidade-noticias h2.noticias {
+    color: #ff0000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.novidade-noticias p.noticias {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+a.noticias {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a.noticias:hover {
+    text-decoration: underline;
+}
+/* fim das noticias */
+/* novidades */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #434343;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #960000;
+    color: #ff4c4c;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #272727;
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+tbody tr:hover {
+    background-color: #666;
+}
+/* fim das novidades */
+/* seila */
+.pilares {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.pilar {
+    width: 30%;
+    height: 200px;
+    background-color: #444;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+    cursor: pointer;
+}
+
+.pilar:hover {
+    background-color: #555;
+}
+
+.expanded {
+    transform: rotate(90deg);
+    width: 100%;
+    height: 300px;
+}
+
+.hidden {
+    display: none;
+}
+/* fim do sei la */
